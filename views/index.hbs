@@ -1,0 +1,15 @@
+<h1>Mi cuenta</h1>
+
+<div class="photo-section">
+    {{#if cloudinaryImageUrl}}
+        <img src="{{cloudinaryImageUrl}}" alt="Foto de perfil">
+    {{else}}
+        <!-- Agrega una imagen por defecto cuando cloudinaryImageUrl está vacío -->
+        <img src="../img/666201.png" alt="Imagen por defecto">
+    {{/if}}
+</div>
+
+<div id="BottomInfo">
+{{>editInfo}}
+</div>
+
